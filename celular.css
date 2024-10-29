@@ -1,0 +1,45 @@
+@media (max-width: 768px) {
+    body {
+
+    }
+    main {
+        width: 100vw;
+    }
+    div#contain {
+        flex-flow: column nowrap;
+        margin-top: 10px;
+        height: 650px;
+    }
+    div#informac {
+        width: 100%;
+        padding: 10px;
+    }
+    section#quemsouEu > h1 {
+        font-size: 36px;
+    }
+    section#imgMar > img {
+        width: 300px;
+        border-radius: 0px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    section#imgMar {
+        background-color: transparent;
+        width: 300px;
+    }
+    section#conjunto {
+        width: 100%;
+        justify-content: space-between;
+    }
+    section#botoesRedes {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    section#quemsouEu {
+    }
+    div#contain {
+        flex-flow:column-reverse;
+        align-items: start;
+        justify-content: start;
+    }
+}

@@ -7,13 +7,15 @@ body {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     background-color: #1C1C1C;
+    width: 100vw;
+    height: 100vh;
     overflow-x: hidden;
    /* background: -webkit-linear-gradient(90deg, #141414,#0e4200);/* Chrome 10-25, Safari 5.1-6 */                         /* background: linear-gradient(90deg, #141414,#0e4200);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                                                                                                                                                                                                                                                 
 }
 main {
-    width: 1150px;
+    width: 75vw;
     height: 2680px;
     color: white;
     font-family: "Montserrat", sans-serif;
@@ -33,20 +35,41 @@ img.cert {
     margin-right: 750px;
 }
 section#imgMar > img{
-    width: 350px;
-    height: 350px;
+    overflow: hidden;
     border-radius: 1000px;
-    animation-name: a;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-play-state: running;
-    animation-delay: 0s ;
-    opacity: 1;
-    z-index: 10;
-    margin-left: -50px;
-    margin-top: 50px;
-    animation-timing-function: inherit;
-    animation-fill-mode: forwards;
+    width: 350px;
+}
+section#imgMar {
+    
+    overflow: hidden;
+    background-color: transparent;
+    width: 350px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+    margin-right: 10px;
+}
+section#botoesRedes {
+    display: flex;
+    height: 100%;
+    margin-left: 0px;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background: linear-gradient(to right, #07d578, #05d89c);
+    
+}
+section#conjunto {
+    background-color: #07d578;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: transparent;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+    height: 100%;
+
 }
 div#qualida > button {
 margin-top: 10px;
@@ -83,7 +106,9 @@ div#qualida > button:hover {
         display: block;
     }
 }
-
+section#quemsouEu {
+    background-color: transparent;
+}
 section#quemsouEu > h1 {
     font-size: 50px;
     animation-name: aparecerSuave;
@@ -92,6 +117,8 @@ section#quemsouEu > h1 {
     animation-play-state: running;
     color: rgba(136, 255, 39, 0.905);
     text-shadow: 0px 0px 20px rgba(157, 255, 0, 0.615);
+    background-color: transparent;
+    word-break: break-word;
 }
 section#quemsouEu > h2 {
     animation-name: aparecerSuaveSAume;
@@ -112,20 +139,24 @@ div#qualida {
     animation-fill-mode: forwards;
 }
 div#informac {
-    padding: 50px;
     display: flex;
     flex-flow: column nowrap;
-    width: 350px;
-    margin-right: 300px;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    padding-top: 30px;
+    padding-left: 30px;
 }
 div#contain {
     background-color: #282828a8;
-    margin-top: 200px;
+    margin-top: 170px;
     display: flex;
     flex-flow: row nowrap;
     border-radius: 5px;
     overflow: hidden;
     height: 450px;
+    width: 100%;
+    justify-content: space-around;
 }
 @keyframes aparecerSuave {
     0% {
@@ -258,29 +289,35 @@ section.tit > h1  {
 }
 figure {
     margin-left: 20px;
-    padding: 20px;
+    padding: 15px;
     background-color: #202020;
-    box-shadow: inset 2px 0px 20px black;
-    width: 150px;
-    border-radius: 20px;
+    box-shadow: inset 0px 0px 5px black;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+h1#hJun {
+    color: red;
+    text-shadow: 0px 0px 5px red;
+}
+figure > img {
+    width: 40px;
 }
 img#git {
-    position: absolute;
+    position: relative;
     width: 100px;
-    right: 0;
-    margin-right: 190px;
-    margin-top: 100px;
-    opacity: 0.5;
+    opacity: 0.9;
     background-color: transparent;
+    filter: invert(100%);
 }
 img#inc {
-    position: absolute;
-    width: 80px;
-    right: 0;
-    margin-right: 198px;
-    margin-top: 250px;
-    opacity: 0.5;
+    position: relative;
+    width: 100px;
+    margin-top: 50px;
+    opacity: 0.9;
     background-color: transparent;
+    filter: invert(100%);
 }
 img#inc:hover {
     cursor: pointer;
@@ -304,7 +341,7 @@ div#projetosD {
     border-right:  white 5px solid;
 }
 div#projetosD > img {
-    width: 610px;
+    width: 680px;
 }
 div#projetosD2 > img {
     width: 610px;
@@ -633,6 +670,26 @@ div.final > span {
     color: #0a0a0a;
     font-size: 18px;
     font-weight: 500;
+}
+section#confeRepo { 
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent  ;
+}
+a {
+    color:white;
+    font-style: normal;
+    text-decoration: none;
+}
+section#confeRepo > span {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.192);
+    border: 0.5px rgba(255, 255, 255, 0.245) solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+section#confeRepo > span:hover {
+    cursor: pointer;
 }
 div.meio {
 color: white;
