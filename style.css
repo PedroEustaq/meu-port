@@ -344,6 +344,7 @@ div#projetosD {
     border-radius: 5px;
     box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
     border-right:  white 5px solid;
+    max-width: 1500px;
 }
 div#projetosD > img {
     width: 60%;
@@ -413,15 +414,21 @@ img#setinhaD {
     margin-right: -0px;
 }
 section#abaSkills {
+    border-radius: 5px;
+    border: rgba(255, 255, 255, 0.114) 0.3px solid;
     border-left: 5px solid white;
     background-color: #282828a8;
-    height: 200px;
+    height: 150px;
+    margin-top: 20px;
     display: flex;
     font-size: 25px;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    width: 98%;
+    max-width: 1500px;
     box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.2);
+    
 }
 section#abaSkills > h1 {
     margin-top: 10px;
@@ -430,6 +437,8 @@ section#abaSkills > h1 {
 }
 div#iconesSkil {
 margin-top: 20px;
+display: flex;
+justify-content: center;
 }
 div#iconesSkil > img {
     width: 500px;
@@ -695,9 +704,11 @@ div#areaDosCertificados {
 }
 
 div.final {
-    width: 1520px;
-    height: 150px;
-    background: -webkit-linear-gradient(90deg, #07d578,#046231,#2b1719);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #07d578,#046231,#2b1719);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                                                                         
+    border-radius: 3px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1600px;
+    background: -webkit-linear-gradient(90deg, #07d578,#01b95a,#2b1719);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #05d779,#007b3c,#00160a);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                                                                         
     color:#fdf6df;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -706,23 +717,52 @@ div.final {
     display:flex;
     align-items:center;
     
-    justify-content: space-evenly;
+    justify-content: space-around;
 
 }
+div#infoC {
+    display: flex;
+    justify-content: center;
+}
 div.final > span {
-    color: #0a0a0a;
+    color: #ffffff;
     font-size: 18px;
     font-weight: 500;
+    background-color: #00000021;
+    padding: 30px;
+    border-radius: 5px;
+    border: 0.5px rgba(255, 255, 255, 0.405) solid;
+}
+div.final > h1 {
+    color: white;
+}
+img#insta {
+    width: 25px;
+    filter: invert(100%);
+}
+img#email {
+    width: 25px;
+    filter: invert(100%);
 }
 section#confeRepo { 
     display: flex;
     justify-content: space-around;
     background-color: transparent  ;
 }
+section#umaRede {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
 a {
     color:white;
     font-style: normal;
     text-decoration: none;
+}
+div.meio {
+    background-color: #0a0a0a3b;
+    padding: 10px;
+    border-radius: 5px;
 }
 section#confeRepo > span {
     color: white;
@@ -740,6 +780,10 @@ line-height: 2.0em;
 }
 div.meio > h2 {
     font-weight: 600;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    justify-content: center;
 }
 a {
     font-weight: 600;

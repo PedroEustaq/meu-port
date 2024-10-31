@@ -83,4 +83,27 @@
     section#site-projeto {
         width: 100%;
     }
+    section#abaSkills {
+        width: 90%;
+    }
+    section#abaSkills > div#iconesSkil > img {
+        width: 90%
+    }
+    div.final {
+        width: 90%;
+        flex-flow: column nowrap;
+    }
+    div.final > span {
+        padding: 5px;
+    }
+    div.meio {
+        width: 100%;
+    }
+    section#umaRede {
+        margin-left: 20px;
+        font-size: 4vw;
+    }
+    div.final > h1 {
+        display: none;
+    }
 }
