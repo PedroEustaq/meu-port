@@ -1,18 +1,31 @@
 @media (max-width: 768px) {
     body {
-
+    overflow-y: auto;
     }
     main {
         width: 100vw;
     }
     div#contain {
         flex-flow: column nowrap;
-        margin-top: 10px;
-        height: 650px;
+        margin-top: 0px;
+        height: 700px;
+        animation-name: none;
     }
     div#informac {
-        width: 100%;
-        padding: 10px;
+        display: flex;
+        flex-flow: column nowrap;
+        width: 320px;
+        border-radius: 20px;
+        padding: 50px;
+        animation-name: none;
+        padding-top: 20px;
+        margin-top: 10px;
+        padding-left: 5px;
+        margin-bottom: 20px;
+        justify-self: center;
+        align-self: center;
+        background-color: rgba(0, 0, 0, 0.221);
+        border: 0.1px solid rgba(255, 255, 255, 0.074)
     }
     section#quemsouEu > h1 {
         font-size: 36px;
@@ -41,5 +54,33 @@
         flex-flow:column-reverse;
         align-items: start;
         justify-content: start;
+    }
+    div#textReal {
+        width: 90%;
+        border-top: 0.5px solid rgba(255, 255, 255, 0.393);
+        border-right: 0.5px solid rgba(255, 255, 255, 0.393);
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.393);
+    }
+    div#separar > h1 {
+        font-size: 41px;
+    }
+    div#separar > img {
+        width: 100px;
+    }
+    * {
+        animation: none !important;
+        transition: none !important;}
+    div#projetosD  {
+        width: 90%;
+        flex-flow: column nowrap;
+    }
+    div#projetosD > img {
+        width: 100%;
+    }
+    figure {
+        flex-flow: row wrap;
+    }
+    section#site-projeto {
+        width: 100%;
     }
 }
