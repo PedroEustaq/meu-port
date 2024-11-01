@@ -88,7 +88,7 @@ document.getElementById('Home').addEventListener('click', function() {
 });
 
 document.getElementById('Sobre').addEventListener('click', function() {
-    document.getElementById('sobre1').scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('textReal').scrollIntoView({ behavior: 'smooth' });
 });
 
 document.getElementById('Portfolio').addEventListener('click', function() {
@@ -105,3 +105,39 @@ function abrirGit() {
 function abrirIn() {
     window.open("https://www.linkedin.com/in/pedroeu/");
 }
+var psou = document.getElementById("pSou")
+var btn = document.getElementById("chat")
+
+const texto = "Pedro é um desenvolvedor júnior com foco em HTML5, CSS3, JavaScript e PHP. Busca se tornar um desenvolvedor sênior, criando soluções práticas que fazem a diferença no dia a dia de pessoas e empresas."; // O texto que será digitado
+    const elemento = document.getElementById("pSou");
+    let indice = 0;
+
+async function resumir() {
+
+    btn.style.animationName = 'escreverChat';
+psou.style.animationName = 'sumirR';  // Reseta a animação
+    await esperar(1200); // Aguarda 2 segundos
+    psou.innerHTML = ""
+    digitar()
+}
+function mouseENT() { 
+    btn.style.animation = 'none';  // Reseta a animação
+    void btn.offsetWidth;          // Trigger de reflow
+    btn.style.animation = 'CYOanim 0.5s forwards';
+    btn.style.animationFillMode = 'forwards';  // Aplica a animação reversa
+}
+
+
+
+ function digitar() {
+    if (indice < texto.length) {
+      elemento.textContent += texto.charAt(indice);
+      indice++;
+      setTimeout(digitar, 50); // Velocidade da digitação em milissegundos
+    }
+  }
+
+  function esperar(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+  

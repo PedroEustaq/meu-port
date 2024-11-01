@@ -50,6 +50,9 @@
     }
     section#quemsouEu {
     }
+    div.navbar {
+        display: none;
+    }
     div#contain {
         flex-flow:column-reverse;
         align-items: start;
@@ -61,15 +64,17 @@
         border-right: 0.5px solid rgba(255, 255, 255, 0.393);
         border-bottom: 0.5px solid rgba(255, 255, 255, 0.393);
     }
+    div#separar  {
+        height: 80px;
+    }
     div#separar > h1 {
         font-size: 41px;
     }
     div#separar > img {
         width: 100px;
+        height: 100px;
     }
-    * {
-        animation: none !important;
-        transition: none !important;}
+    
     div#projetosD  {
         width: 90%;
         flex-flow: column nowrap;

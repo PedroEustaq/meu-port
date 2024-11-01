@@ -26,6 +26,48 @@ main {
     display: flex;
     flex-flow: column nowrap;
 }
+p#pSou {
+    animation-name: a;
+  animation-duration: 2.3s;
+  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+@keyframes sumirR {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+div.typing-demo {
+    width: 100vw;
+    height: 300px;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: wrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 2em;
+}
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+p.ptext {
+}
 img.cert {
     position: absolute;
     margin-top: -750px;
@@ -497,6 +539,27 @@ div#textReal {
     max-width: 1500px;
     display: flex;
     flex-flow: column nowrap;
+    
+
+}
+@keyframes escreverChat {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+        transform: translateX(55px);
+        height: 30px;
+        width: 20%;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(55px);
+        display: none;
+        width: 0;
+        height: 0;
+    }
+    
 }
 button#chat {
     display: flex;
@@ -511,6 +574,14 @@ button#chat {
     color: white;
     background: linear-gradient(to right, #07d578, #05d89c);
     border: #ffffff6a 0.2px solid;
+
+    animation-name: a;
+    animation-duration: 2s;
+    animation-timing-function:cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
 }
 button#chat:hover {
     cursor: pointer;
@@ -536,7 +607,10 @@ div#textReal > p {
     font-size: 18px;
     width: 90%;
     padding-left: 20px;
+
 }
+
+
 div#separar {
     display: flex;
     flex-flow: row nowrap;
