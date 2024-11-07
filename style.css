@@ -332,6 +332,16 @@ section.tit > h1  {
     font-size: 50px;
     border-bottom: #ffffff 0px solid;
 }
+figure#formFIg {
+    margin-left: 20px;
+    padding: 15px;
+    background-color: #202020;
+    box-shadow: inset 0px 0px 5px black;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
 figure {
     margin-left: 20px;
     padding: 15px;
@@ -342,9 +352,17 @@ figure {
     justify-content: space-between;
     border-radius: 5px;
 }
+div#projetosD > img#formIMG {
+    width: 60%;
+}
 h1#hJun {
     color: red;
     text-shadow: 0px 0px 5px red;
+    font-size: 50px;
+}
+h1#hJun1 {
+    color: rgb(255, 246, 73);
+    text-shadow: 0px 0px 5px rgb(227, 186, 0);
     font-size: 50px;
 }
 figure > img {

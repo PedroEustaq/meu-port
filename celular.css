@@ -82,6 +82,9 @@
     div#projetosD > img {
         width: 100%;
     }
+    div#projetosD > img#formIMG {
+        width: 100%;
+    }
     figure {
         flex-flow: row wrap;
     }
