@@ -114,4 +114,18 @@
     div.final > h1 {
         display: none;
     }
+    div#pararUmPouco {
+        width: 90%;
+    }
+    section#desaf {
+        width: 50%;
+    }
+    section#mais {
+        width: 50%;
+        font-size: 17px;
+        transition: none;
+    }
+    section#mais:hover {
+        width: 50%;
+    }
 }

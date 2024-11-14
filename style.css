@@ -332,6 +332,60 @@ section.tit > h1  {
     font-size: 50px;
     border-bottom: #ffffff 0px solid;
 }
+div#pararUmPouco {
+    width: 100%;
+    background-color: #212222;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    border-radius: 5px;
+    align-items: center;
+    max-width: 1500px;
+}
+section#desaf {
+    background-color: #131313;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgba(255, 255, 255, 0.122);
+    width: 30%;
+    align-items: center;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.096);
+    height: 50px;
+    border-radius: 5px;
+    transition: width 1s ease;
+}
+section#desaf:hover {
+    cursor: pointer;
+    width: 50%;
+}
+section#mais:hover {
+    cursor: pointer;
+    width: 100%;
+}
+section#mais {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    width: 70%;
+    background:linear-gradient(to right, #222222,#000000);
+    margin-right: 20px;
+    border: 1px rgba(255, 255, 255, 0.147) solid;
+    border-radius: 5px;
+    height: 100%;
+    transition: width 1s ease;
+}
+section#mais > img {
+    width: 35px;
+    margin-right: 10px;
+    filter: invert(100%);
+}
+section#desaf > img {
+    width: 45px;
+}
 figure#formFIg {
     margin-left: 20px;
     padding: 15px;

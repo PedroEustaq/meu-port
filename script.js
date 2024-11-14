@@ -140,4 +140,8 @@ function mouseENT() {
   function esperar(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
+
+  function clickfront() {
+    window.open("https://www.frontendmentor.io/profile/PedroEustaq")
+  }
   
