@@ -880,7 +880,15 @@ div.final > span {
     border: 0.5px rgba(255, 255, 255, 0.405) solid;
 }
 div.final > h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.final > h1 > img{
     color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 2px;
 }
 img#insta {
     width: 25px;
@@ -924,6 +932,7 @@ div.meio {
 color: white;
 line-height: 2.0em;
 }
+
 div.meio > h2 {
     font-weight: 600;
     display: flex;
