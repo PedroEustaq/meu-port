@@ -27,6 +27,9 @@
         background-color: rgba(0, 0, 0, 0.221);
         border: 0.1px solid rgba(255, 255, 255, 0.074)
     }
+    h1#hLan {
+        font-size: 43px;
+    }
     section#quemsouEu > h1 {
         font-size: 36px;
     }
