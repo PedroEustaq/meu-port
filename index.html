@@ -9,6 +9,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="celular.css">
     <link rel="shortcut icon" href="img/P.png" type="image/x-icon">
@@ -17,10 +18,12 @@
 <body>
 
     <div class="navbar">
-        <div id="Home">Home</div>
-        <div id="Sobre">Sobre</div>
-        <div id="Portfolio">Portfólio</div>
-        <div id="Certificado">Certificados</div>
+        <div id="separar">
+            <div id="Home">Home</div>
+            <div id="Sobre">Sobre</div>
+            <div id="Portfolio">Portfólio</div>
+            <div id="Certificado">Certificados</div>
+        </div>
     </div>
 
     <main>
@@ -43,11 +46,11 @@
             </div>
             <section id="conjunto">
                 <section id="imgMar">
-                    <img src="euu.jpeg" alt="">
+                    <img src="img/euu.jpeg" alt="">
                 </section>
                 <section id="botoesRedes">
-                    <img src="giticon.png" alt="" id="git" onclick="abrirGit()">
-                    <img src="incone.png" alt="" id="inc" onclick="abrirIn()">
+                    <img src="Skill/giticon.png" alt="" id="git" onclick="abrirGit()">
+                    <img src="Skill/incone.png" alt="" id="inc" onclick="abrirIn()">
                 </section>
             </section>
         </div>
@@ -57,9 +60,8 @@
         <div id="textReal">
             <div id="separar">
                 <h1>Sobre Mim</h1>
-                <img src="aspasa.png" alt="" class="imgAsp">
+                <img src="Skill/aspasa.png" alt="" class="imgAsp">
             </div>
-            <button id="chat" onclick="resumir()"><img src="chat.png" alt="">Resumir</button>
             <p id="pSou">
                 Olá! Meu nome é Pedro Eustáquio Martins Assad Magalhães, e sou um desenvolvedor júnior apaixonado
                 por programação. Meu primeiro contato com o mundo do desenvolvimento foi através da criação de jogos
@@ -76,39 +78,33 @@
 
 
 
+        <div id="projetosD" class="Shidden">
 
-        <!-- <section>
-        <img src="arrow_right_icon_133714.png" alt="" id="setinhaD"onclick="setinhaD()">
-        <img src="arrow_right_icon_133714.png" alt="" id="setinhaE" onclick="setinhaE()">
-    </section>
-    -->
+            <img src="img/nextImg.png" alt="" class="nextI">
 
-    <div id="projetosD" class="Shidden">
+            <section id="site-projeto">
+                <section class="tit">
+                    <h1 id="hLan">Landing Page</h1>
+                </section>
 
-        <img src="img/nextImg.png" alt="" class="nextI">
+                <figure id="LanF">
+                    <img src="Skill/HTML5.svg" alt="">
+                    <img src="Skill/CSS3.svg" alt="">
+                </figure>
 
-        <section id="site-projeto">
-            <section class="tit">
-                <h1 id="hLan">Landing Page</h1>
+                <section class="maisT">
+                    Criação e desenvolvimento de Landing Pages altamente personalizadas e otimizadas para
+                    conversão.<br><br>Efeitos HTML5 e CSS3.
+                </section>
+
+                <section id="confeRepo">
+
+                    <span><a href="https://pedroeustaq.github.io/Site-Empresa//">VISITAR</a></span>
+                    <span><a href="https://github.com/PedroEustaq/Site-Empresa">REPOSITÓRIO</a></span>
+                </section>
             </section>
-
-            <figure id="LanF">
-                <img src="Skill/HTML5.svg" alt="">
-                <img src="Skill/CSS3.svg" alt="">
-            </figure>
-
-            <section class="maisT">
-                Criação e desenvolvimento de Landing Pages altamente personalizadas e otimizadas para conversão.<br><br>Efeitos HTML5 e CSS3.
-            </section>
-
-            <section id="confeRepo">
-
-                <span><a href="https://pedroeustaq.github.io/Site-Empresa//">VISITAR</a></span>
-                <span><a href="https://github.com/PedroEustaq/Site-Empresa">REPOSITÓRIO</a></span>
-            </section>
-        </section>
-    </div>    
-    <div id="projetosD" class="Shidden">
+        </div>
+        <div id="projetosD" class="Shidden">
 
             <img src="img/junior.png" alt="">
 
@@ -167,8 +163,6 @@
             </section>
         </div>
         <div id="pararUmPouco">
-            <section id="mais" onclick="maisProj()"><img src="img/seta-para-baixo-em-fundo-preto-circular.png" alt="">
-                Mostrar mais projetos</section>
             <section id="desaf" onclick="clickfront()"><img src="img/frontICON.png" alt=""> Desafios Front-end >>
             </section>
         </div>
@@ -177,34 +171,10 @@
                 <h1 class="te1">Skills</h1>
             </div>
             <div id="iconesSkil" class="hidden">
-                <img src="bitstropical.png" alt="" id="icoSki" class="te2">
+                <img src="Skill/bitstropical.png" alt="" id="icoSki" class="te2">
             </div>
         </section>
 
-
-        <!--
-        <div id="CertificadoArea">
-            <div id="tex">Área de Certificados <br>
-            </div>
-            <div id="analizar"><a href="Certificados.pdf">Ver Mais  >></a>
-            </div>
-            <div id="areaDosCertificados">
-                <div class="Cimagem"><img id="m1"
-                        src="https://media.discordapp.net/attachments/846044909462749211/1280517523938480191/Pedro-Eustaquio-Curso-de-PHP-Moderno-Modulo-1-Certificado-40h-Estudonauta_page-0001.jpg?ex=66d85e60&is=66d70ce0&hm=2b6fa127593cceca011bfea302a8d93c72c50b733cbc90884928007c3eb56cff&=&format=webp&width=947&height=670"
-                        alt=""></div>
-                <div class="Cimagem"><img id="m2"
-                        src="https://media.discordapp.net/attachments/846044909462749211/1280519002388562004/Pedro-Eustaquio-Android-Studio-8211-Modulo-03-Atividades-Certificado-20h-Estudonauta_page-0001.jpg?ex=66d85fc1&is=66d70e41&hm=00209a381d9973652458bcf17b4131beeb6ece1c7311a1eab37545a8c1e9175e&=&format=webp&width=867&height=670"
-                        alt=""></div>
-                <div class="Cimagem"><img id="m3"
-                        src="https://media.discordapp.net/attachments/846044909462749211/1280519002807996446/Pedro-Eustaquio-MySQL-8211-Modulo-00-Certificado-40h-Estudonauta_page-0001.jpg?ex=66d85fc1&is=66d70e41&hm=921030012dad6765abe4294881781216a98e99c6145a562837d64e8c52887acf&=&format=webp&width=947&height=670"
-                        alt=""></div>
-                <div class="Cimagem"><img id="m4"
-                        src="https://media.discordapp.net/attachments/846044909462749211/1280519003479080971/Pedro-Eustaquio-Linguagem-JavaScript-Certificado-40h-Estudonauta_page-0001.jpg?ex=66d85fc1&is=66d70e41&hm=4d1966a646e99f4524d7e4fcf31d338f88b74dab312081b46a50f7a9202fd333&=&format=webp&width=947&height=670"
-                        alt=""></div>
-            </div>
-        </div>
-    </main>
-    -->
         <div class="final">
             <span>&copy; Pedro Eustáquio</span>
             <div class="meio">
@@ -212,11 +182,11 @@
                     <h2>Informações de Contato:<h2>
                 </div>
                 <section id="umaRede">
-                    <img src="insta.png" alt="" id="insta"><a>&nbsp;Instagram:</a> eustaquiin
+                    <img src="Skill/insta.png" alt="" id="insta"><a>&nbsp;Instagram:</a> eustaquiin
                 </section>
 
                 <section id="umaRede">
-                    <img src="email_2669570.png" alt="" id="email"><a>&nbsp;E-mail:</a> emailsped@umemailai.com
+                    <img src="Skill/email_2669570.png" alt="" id="email"><a>&nbsp;E-mail:</a> emailsped@umemailai.com
                 </section>
             </div>
             <h1><img src="img/P.png" alt=""></h1>
