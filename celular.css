@@ -131,4 +131,10 @@
     section#mais:hover {
         width: 50%;
     }
+    h1#hLDJogos {
+        font-size: 30px;
+    }
+    div#projetosD > img#JogoImg {
+        width: 100%;
+    }
 }

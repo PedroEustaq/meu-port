@@ -102,6 +102,9 @@ document.getElementById('Certificado').addEventListener('click', function() {
 function abrirGit() {
     window.open("https://github.com/PedroEustaq");
 }
+function abrirAcademico() {
+    window.open("https://github.com/PedroEustaq/Projetos-Academicos-Geral");
+}
 function abrirIn() {
     window.open("https://www.linkedin.com/in/pedroeu/");
 }
