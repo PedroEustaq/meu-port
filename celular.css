@@ -13,7 +13,10 @@
         height: 750px;
         animation-name: none;
     }
-
+.Shidden {
+    opacity: 1;
+    filter: blur(0px);
+}
     div#informac {
         display: flex;
         flex-flow: column nowrap;
@@ -144,7 +147,11 @@
     section#abaSkills {
         width: 90%;
     }
-
+    .hidden {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateX(0px);
+    }
     section#abaSkills>div#iconesSkil>img {
         width: 90%
     }
