@@ -13,7 +13,7 @@
     opacity: 0;
     filter: blur(1px);
     transition: all 1s;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 .apareceSite {
     opacity: 1;
