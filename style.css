@@ -44,7 +44,7 @@ div#projetosD > img#JogoImg {
 }
 main {
     width: 75vw;
-    height: 5080px;
+    height: 10080px;
     color: white;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -464,6 +464,8 @@ div#pararUmPouco {
     max-width: 1500px;
     overflow: hidden;
 }
+div#pararUmPouco:hover {
+}
 div#Flutuante {
     overflow: hidden;
     position: relative;
@@ -479,6 +481,13 @@ div#Flutuante > img {
     margin-top: 20px;
     border-radius: 5px;
     transform: rotate3d(1, 1, 0, 30deg);
+    transition: all 1s;
+}
+div#Flutuante > img:hover {
+    transition: all 0.5s;
+    scale: 1;
+    cursor: pointer;
+    transform: rotate3d(1, 1, 0, 0deg) translateY(-10px);
 }
 div#Flutuante > img#comb1 {
     position: relative;
