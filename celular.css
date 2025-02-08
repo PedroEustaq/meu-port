@@ -10,7 +10,7 @@
     div#contain {
         flex-flow: column nowrap;
         margin-top: 0px;
-        height: 700px;
+        height: 750px;
         animation-name: none;
     }
 
@@ -225,7 +225,7 @@
     section#ConfiraTambem > h1 {
         margin: 0px;
         padding: 0px;
-        border: 1px solid white;
+        border: 0px solid white;
         border-radius: 25px;
         font-size: 15px;
         text-align: center;
