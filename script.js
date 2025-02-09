@@ -118,6 +118,9 @@ function abrirAcademico() {
 function abrirIn() {
     window.open("https://www.linkedin.com/in/pedroeu/");
 }
+function abrirCert() {
+    window.open("Certificados.pdf");
+}
 var psou = document.getElementById("pSou")
 var btn = document.getElementById("chat")
 

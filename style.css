@@ -101,7 +101,7 @@ div.typing-demo {
     }
 }
 
-p.ptext {}
+
 
 img.cert {
     position: absolute;
@@ -464,8 +464,7 @@ div#pararUmPouco {
     max-width: 1500px;
     overflow: hidden;
 }
-div#pararUmPouco:hover {
-}
+
 div#Flutuante {
     overflow: hidden;
     position: relative;
@@ -972,7 +971,6 @@ div#separar>h1 {
     width: 300px;
 }
 
-div#textReal>h1 {}
 
 section#imgsob>img {
     height: 400px;
