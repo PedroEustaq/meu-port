@@ -33,7 +33,7 @@ h1#hLDJogos {
     letter-spacing: 2px;
     margin-bottom: 15px;
     text-align: center;
-    font-size: 3vw;
+    font-size: 250%;
 }
 img.nextI {
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -1136,7 +1136,7 @@ div.final {
     border-radius: 3px;
     margin-top: 20px;
     width: 100%;
-    max-width: 1600px;
+    max-width: 1520px;
     background: -webkit-linear-gradient(90deg, #07d578, #01b95a, #2b1719);
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(90deg, #05d779, #007b3c, #00160a);
@@ -1150,7 +1150,7 @@ div.final {
     align-items: center;
 
     justify-content: space-around;
-
+height: 150px;
 }
 
 div#infoC {
