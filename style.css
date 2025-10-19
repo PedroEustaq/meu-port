@@ -237,6 +237,7 @@ section#quemsouEu>h1 {
 section#quemsouEu>h2 {
     animation-name: aparecerSuaveSAume;
     animation-duration: 2s;
+    font-size: 40px;
     animation-iteration-count: 1;
     animation-play-state: running;
     animation-delay: 1s;
