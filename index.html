@@ -14,30 +14,54 @@
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href="celular.css">
-    <link rel="stylesheet" href="tablet.css">
-    <link rel="shortcut icon" href="img/P.png" type="image/x-icon">
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SZR6FVSVBP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-SZR6FVSVBP');
-</script>
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="celular.css">
+    <link rel="shortcut icon" href="img/P.png" type="image/x-icon">
 </head>
 
 <body>
-
     <div class="navbar">
+        <div id="logo"><b>PEDRO EUSTÁQUIO</b></div>
+        
+     
+        <div class="mudarTemaBTN">
+            <img src="Skill/SolBranco.png" alt="" width="50px" class="iconSol">
+            <div class="toggarBTN">
+                <input type="checkbox" id="mudartemaID" class="inputTema">
+                <label for="mudartemaID" class="temaLabelClasse">
+                    <div class="slidezao"></div>
+                </label>
+            </div>
+            <img src="Skill/LuaBranco.png" alt="" width="50px" class="iconLua">
+        </div>
+        
         <div id="separar">
             <div id="Home">Home</div>
-            <div id="Sobre">Sobre</div>
-            <div id="Portfolio">Portfólio</div>
-            <div id="Certificado" onclick="abrirCert()">Certificados</div>
+            <div id="Sobre" >Sobre</div>
+            <div id="Portfolio" >Portfólio</div>
+            <div id="Contato">Contato</div>
+            <div id="Certificado"  onclick="abrirCert()">Certificados</div>
         </div>
+        
+        <div id="btnLista">
+            <img src="img/iconBranco.png" alt="">
+        <input type="checkbox" id="menu-toggle">
     </div>
+    </div>
+    <div id="PainelDesce">
+        <div id="Home" class="Home">Home</div>
+        <div id="Sobre" class="Sobre">Sobre</div>
+        <div id="Portfolio" class="Portfolio">Portfólio</div>
+        <div id="Contato" class="Contato">Contato</div>
+        <div id="Certificado" class="Certificado" onclick="abrirCert()">Certificados</div>
+        
+
+    </div></div>
+ 
+    
+
+    
 
     <main>
         <div id="contain">
@@ -47,20 +71,15 @@
                     <h1>PEDRO<br>EUSTÁQUIO</h1>
                     <br>
                 </section>
-                <div id="qualida">
-                    ⚪ Programador por natureza
-                    <br>
-                    <button onclick="abrirIn()">Contate-me</button>
-                </div>
+          
             </div>
             <section id="conjunto">
                 <section id="imgMar">
                     <img src="img/Foto.jpeg" alt="">
+                    <a href="https://github.com/PedroEustaq">github.com/PedroEustaq</a>
                 </section>
-                <section id="botoesRedes">
-                    <img src="Skill/giticon.png" alt="" id="git" onclick="abrirGit()">
-                    <img src="Skill/incone.png" alt="" id="inc" onclick="abrirIn()">
-                </section>
+                
+         
             </section>
         </div>
 
@@ -68,28 +87,51 @@
 
         <div id="textReal">
             <div id="separar">
-                <h1>Sobre Mim</h1>
-                <img src="Skill/aspasa.png" alt="" class="imgAsp">
+                <h1>Sobre</h1>
+
             </div>
             <p id="pSou">
-                Olá! Meu nome é Pedro Eustáquio Martins Assad Magalhães, e sou um desenvolvedor júnior apaixonado
-                por programação. Meu primeiro contato com o mundo do desenvolvimento foi através da criação de jogos
-                usando C++, e desde então, descobri que programar é mais do que uma profissão para mim—é uma paixão.
-                <br><br>
-                Atualmente, minhas habilidades principais estão em HTML5, CSS3, JavaScript e PHP, e estou
-                constantemente estudando para aprimorar e expandir meu conhecimento. Sigo diversos mentores e
-                professores no ramo da TI para me manter atualizado com as últimas tendências e tecnologias.
-                <br><br>
-                Meu grande objetivo é me tornar um desenvolvedor sênior e criar códigos que realmente façam a
-                diferença, ajudando a resolver problemas do dia a dia de pessoas e empresas.
+                Olá! Meu nome é Pedro Eustáquio, e sou um desenvolvedor apaixonado por programação.Atualmente estudo no Colegio COTEMIG unidade BARROCA, possuo conhecimento em muitas linguagens e gosto de programar.Sigo diversos mentores e professores no ramo da TI para me manter atualizado com as últimas tendências e tecnologias.
             </p>
         </div>
+        <div id="textReal" class="Stack">
+            <div id="separar">
+                <h1>Skills</h1>
+          
+            </div>
+            <section class="painelSkills">
+                <div class="IconeSkillszinha">
+                    <img src="Skill/HTML5.svg" alt="" width="50px">
+                    <p>HTML 5</p>
+                </div>
+                <div class="IconeSkillszinha">
+                    <img src="Skill/CSS3.svg" alt="" width="50px">
+                    <p>CSS3</p>
+                </div>
+                <div class="IconeSkillszinha">
+                    <img src="Skill/JavaScript.svg" alt="" width="50px">
+                    <p>JavaScript</p>
+                </div>
+                <div class="IconeSkillszinha">
+                    <img src="Skill/CSharp.png" alt="" width="50px">
+                    <p>C#</p>
+                </div>
+                <div class="IconeSkillszinha">
+                    <img src="Skill/Firebase.png" alt="" width="50px">
+                    <p>Firebase</p>
+                </div>
+                <div class="IconeSkillszinha">
+                    <img src="Skill/Python.png" alt="" width="50px">
+                    <p>Python</p>
+                </div>
+            </section>
+        </div>
 
-        <!---->
+
         <div id="Academicos">
             <div id="Conhecer">
                 <h1 id="ProJ">PROJETOS ACADÊMICOS</h1>
-                <p>Conheça algumas das minhas primeiras atividades e projetos acadêmicos<br> além das listadas :</p>
+                <p id="conhecerP">Conheça algumas das minhas primeiras atividades e projetos acadêmicos<br> além das listadas :</p>
                 <button class="requebraTudo" onclick="abrirAcademico()">
                     <span>M</span><span>e</span>
                     <span>L</span><span>e</span><span>v</span><span>e</span>
@@ -119,47 +161,30 @@
                 </section>
 
                 <figure id="LanF">
-                    <img src="Skill/HTML5.svg" alt="">
-                    <img src="Skill/CSS3.svg" alt="">
+                    <div class="IconeSkillszinha">
+                        <img src="Skill/HTML5.svg" alt="" width="20px">
+                        <p>HTML5</p>
+                    </div>
+                    <div class="IconeSkillszinha">
+                        <img src="Skill/CSS3.svg" alt="" width="20px">
+                        <p>CSS3</p>
+                    </div>
                 </figure>
 
                 <section class="maisT">
+                    <p id="SobreOP">
                     Criação e desenvolvimento de Landing Pages altamente personalizadas e otimizadas para
-                    conversão.<br><br>Efeitos HTML5 e CSS3.
+                    conversão.<br><br>Efeitos HTML5 e CSS3.</p>
                 </section>
 
                 <section id="confeRepo">
 
-                    <span><a href="https://pedroeustaq.github.io/Site-Empresa//">VISITAR</a></span>
+                    <span class="visitabtn"><a href="https://pedroeustaq.github.io/Site-Empresa//">VISITAR</a></span>
                     <span><a href="https://github.com/PedroEustaq/Site-Empresa">REPOSITÓRIO</a></span>
                 </section>
             </section>
         </div>
-        <div id="projetosD" class="Shidden">
-
-            <img src="img/sitejogosfull.png" alt="" id="JogoImg">
-            <section id="site-projeto">
-                <section class="tit">
-                    <h1 id="hLDJogos">Loja de Jogos</h1>
-                </section>
-
-                <figure>
-                    <img src="Skill/HTML5.svg" alt="">
-                    <img src="Skill/CSS3.svg" alt="">
-                    <img src="Skill/PHPsvg.svg" alt="">
-                    <img src="Skill/MySQL.svg" alt="">
-                </figure>
-
-                <section class="maisT">
-                    Um site para uma loja de jogos integrado a um banco de dados MySQL, desenvolvido com PHP.
-                </section>
-
-                <section id="confeRepo">
-
-                    <span><a href="https://github.com/PedroEustaq/Loja-de-Jogos">REPOSITÓRIO</a></span>
-                </section>
-            </section>
-        </div>
+        
         <div id="projetosD" class="Shidden">
 
             <img src="img/junior.png" alt="">
@@ -170,18 +195,25 @@
                 </section>
 
                 <figure id="LanF">
-                    <img src="Skill/HTML5.svg" alt="">
-                    <img src="Skill/CSS3.svg" alt="">
+                    <div class="IconeSkillszinha">
+                        <img src="Skill/HTML5.svg" alt="" width="20px">
+                        <p>HTML5</p>
+                    </div>
+                    <div class="IconeSkillszinha">
+                        <img src="Skill/CSS3.svg" alt="" width="20px">
+                        <p>CSS3</p>
+                    </div>
                 </figure>
-
                 <section class="maisT">
+                    <p id="SobreOP">
                     Um modelo de plataforma de streaming, projetado para oferecer uma experiência dinâmica aos usuários.
                     <br><br>Efeitos HTML5 e CSS3.
+                </p>
                 </section>
 
                 <section id="confeRepo">
 
-                    <span><a href="https://pedroeustaq.github.io/juniorflix/">VISITAR</a></span>
+                    <span class="visitabtn"><a href="https://pedroeustaq.github.io/juniorflix/">VISITAR</a></span>
                     <span><a href="https://github.com/PedroEustaq/juniorflix">REPOSITÓRIO</a></span>
                 </section>
             </section>
@@ -193,19 +225,28 @@
 
             <section id="site-projeto">
                 <section class="tit">
-                    <h1 id="hJun1">COSTS
-                    </h1>
+                    <h1 id="hJun1">COSTS</h1>
                 </section>
 
                 <figure id="formFIg">
-                    <img src="Skill/CSS3.svg" alt="">
-                    <img src="Skill/Vite.png" alt="">
-                    <img src="Skill/React.png" alt="">
+                    <div class="IconeSkillszinha">
+                        <img src="Skill/CSS3.svg" alt="" width="20px">
+                        <p>CSS3</p>
+                    </div>
+                    <div class="IconeSkillszinha">
+                        <img src="Skill/Vite.png" alt="" width="20px">
+                        <p>Vite</p>
+                    </div>
+                    <div class="IconeSkillszinha">
+                        <img src="Skill/React.png" alt="" width="20px">
+                        <p>React</p>
+                    </div>
                 </figure>
 
                 <section class="maisT">
+                    <p id="SobreOP">
                     COSTS é um gerenciador de finanças feito em React, com formulários personalizados, efeitos em CSS3 e JS e integração com uma API REST para manipular dados financeiros.<br><br>
-               
+               </p>
                 </section>
 
                 <section id="confeRepo">
@@ -216,44 +257,48 @@
             </section>
         </div>
         
-        <div id="pararUmPouco">
-            <section id="desaf"><img src="img/frontICON.png" alt="" onclick="clickfront()">
-            </section>
-            <section id="ConfiraTambem">
-                <h1>Confira também alguns dos meus desafios Front-end Mentor!</h1>
-                <div id="Flutuante">
-                    <img src="img/comborda1.png" alt="" id="comb1" onclick="clickfront()">
-                    <img src="img/comborda2.png" alt="" onclick="clickfront()">
-                    <img src="img/comborda3.png" alt="" onclick="clickfront()">
-                    <img src="img/comborda4.png" alt="" onclick="clickfront()">
-                </div>
-            </section>
 
+
+<section class="EntreEmContato">
+    <div class="painelContato">
+        <div class="painelCabecalhu">
+            <div class="bolinhas">
+                <div class="bolinhasPonto"></div>
+                <div class="bolinhasPonto"></div>
+                <div class="bolinhasPonto"></div>
+                <div class="bolinhasPonto"></div>
+            </div>
+            <h2>ENTRE EM CONTATO</h2>
         </div>
-        <!--
-        <section id="abaSkills" class="hidden">
-            <div class="hidden">
-                <h1 class="te1">Skills</h1>
+        
+        <form class="formis">
+            <div class="input-row">
+                <input type="text" placeholder="Nome" class="form-input" required>
+                <input type="email" placeholder="Email" class="form-input" required>
             </div>
-            <div id="iconesSkil" class="hidden">
-                <img src="Skill/bitstropical.png" alt="" id="icoSki" class="te2">
-            </div>
-        </section>
--->
+            
+            <textarea placeholder="Digite nesse campo" class="form-textarea" rows="6" required></textarea>
+            
+            <button type="submit" class="submit-btn">Enviar</button>
+        </form>
+    </div>
+</section>
         <div class="final">
-            <span>&copy; Pedro Eustáquio</span>
+           
             <div class="meio">
                 <div id="infoC">
                     <h2>Informações de Contato:<h2>
                 </div>
-                <!--
+
                 <section id="umaRede">
-                    <img src="Skill/insta.png" alt="" id="insta"><a>&nbsp;Instagram:</a> eustaquiin
+                    <a>E-mail:</a> pedroeustaquioassad@gmail.com
+                    
                 </section>
--->
                 <section id="umaRede">
-                    <img src="Skill/email_2669570.png" alt="" id="email"><a>&nbsp;E-mail:</a> pedroeustaqu@gmail.com
+                    <a>Instagram:</a> @eustaquiin
+                    
                 </section>
+                
             </div>
             <h1><img src="img/P.png" alt=""></h1>
         </div>

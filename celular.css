@@ -2,7 +2,12 @@
     body {
         overflow-y: auto;
     }
-
+    body.light-mode .navbar {
+        background-color: #4fff5e;
+    }
+    body.light-mode #informac {
+        background-color: #4fff5e;
+    }
     main {
         width: 100vw;
     }
@@ -13,10 +18,10 @@
         height: 750px;
         animation-name: none;
     }
-.Shidden {
-    opacity: 1;
-    filter: blur(0px);
-}
+    .Shidden {
+        opacity: 1;
+        filter: blur(0px);
+    }
     div#informac {
         display: flex;
         flex-flow: column nowrap;
@@ -93,24 +98,43 @@
 
 
     div.navbar {
-        display: none;
+        display: flex;
     }
+    div.navbar #logo {
+        font-size: 20px;
+    }
+
 
     div#contain {
         flex-flow: column-reverse;
         align-items: start;
         justify-content: start;
     }
+   
+    
 
+div#btnLista input {
+position: absolute;
+width: 30px;
+height: 30px;
+transform: translateX(-32px);
+}
     div#textReal {
         width: 90%;
         border-top: 0.5px solid rgba(255, 255, 255, 0.393);
         border-right: 0.5px solid rgba(255, 255, 255, 0.393);
         border-bottom: 0.5px solid rgba(255, 255, 255, 0.393);
     }
-
-    div#separar {
+    main .Stack .painelSkills {
+min-height: 500px;
+        display: flex;
+        align-items: start;
+        margin-left: 15px;
+        flex-flow: column nowrap;
+    }
+    .navbar>div#separar {
         height: 80px;
+        display: none;
     }
 
     div#separar>h1 {
@@ -154,7 +178,14 @@
     section#abaSkills>div#iconesSkil>img {
         width: 90%
     }
-
+    .form-textarea {
+        padding: 14px;
+        width: 90%;
+        font-size: 14px;
+    }
+    body.light-mode .form-textarea {
+        padding: 0px;
+    }
     div.final {
         width: 90%;
         flex-flow: column nowrap;
@@ -249,7 +280,7 @@
 
     div#Academicos {
         width: 90%;
-        height: 600px;
+        height: 700px;
         display: flex;
         flex-flow: column-reverse nowrap;
         padding: 0px;
