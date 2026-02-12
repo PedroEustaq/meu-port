@@ -1,0 +1,214 @@
+/* ===== CRITICAL CSS - Above-the-fold (LCP) =====
+   Carrega primeiro para renderização imediata do hero */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body label {
+    display: none;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: start;
+    background-color: #1C1C1C;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+main {
+    width: 75vw;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #272727;
+    position: relative;
+    top: 0;
+    margin-top: 0px;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+#logo {
+    color: #4fff5e;
+    text-shadow: 0px 0px 5px #05d89c;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar>div#separar {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    color: white;
+    background-color: #1b1b1b00;
+    padding: 0px;
+    padding-right: 30px;
+    border: 0px solid #202020;
+    border-radius: 0px;
+    transition: all 0.5s;
+}
+
+.navbar>div#separar>div {
+    color: white;
+    background-color: #363636;
+    padding: 10px;
+    border: 1px solid #202020;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.navbar>div#separar>div:hover {
+    cursor: pointer;
+    color: rgb(7, 213, 120);
+    border: 1px solid rgb(7, 213, 120);
+    transition: all 0.5s;
+}
+
+/* Theme switch (visível no navbar) */
+.mudarTemaBTN { display: flex; align-items: center; margin: 0 20px; gap: 10px; }
+.toggarBTN { position: relative; }
+.iconSol, .iconLua { width: 50px; height: 50px; }
+.inputTema { display: none; }
+.temaLabelClasse {
+    display: flex; align-items: center; cursor: pointer; position: relative;
+    width: 80px; height: 35px;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    border-radius: 20px; transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.slidezao {
+    position: absolute; top: 3px; left: 3px; width: 29px; height: 29px;
+    background: white; border-radius: 50%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+.inputTema:checked + .temaLabelClasse { background: linear-gradient(135deg, #ffd700, #ffed4e); }
+.inputTema:checked + .temaLabelClasse .slidezao { transform: translateX(45px); }
+
+/* Hero - LCP principal */
+div#contain {
+    background-color: #282828a8;
+    margin-top: 60px;
+    display: flex;
+    flex-flow: row nowrap;
+    border-radius: 5px;
+    height: 450px;
+    width: 100%;
+    justify-content: space-around;
+    flex-grow: 0;
+    max-width: 1500px;
+}
+
+div#informac {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+section#conjunto {
+    background-color: transparent;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+    height: 100%;
+}
+
+section#imgMar {
+    overflow: hidden;
+    background-color: transparent;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    margin-right: 10px;
+}
+
+section#imgMar>img {
+    overflow: hidden;
+    border-radius: 1000px;
+    width: 350px;
+}
+
+section#imgMar a {
+    color: rgb(134, 255, 130);
+}
+
+section#quemsouEu {
+    background-color: transparent;
+}
+
+section#quemsouEu>h1 {
+    font-size: 70px;
+    animation-name: aparecerSuave;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    color: #4fff5e;
+    text-shadow: 0px 0px 5px #05d89c;
+    background-color: transparent;
+    word-break: break-word;
+}
+
+section#quemsouEu>h2 {
+    animation-name: aparecerSuaveSAume;
+    animation-duration: 2s;
+    font-size: 60px;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aparecerSuave {
+    0% { opacity: 0; font-size: 40px; transform: translateX(-100px); }
+    100% { opacity: 1; font-size: 50px; transform: translateX(0px); }
+}
+
+@keyframes aparecerSuaveSAume {
+    0% { opacity: 0; transform: translateX(-100px); }
+    100% { opacity: 1; transform: translateX(0px); }
+}
+
+/* Menu mobile (oculto por padrão) */
+#PainelDesce { display: none; }
+#menu-toggle { opacity: 0; }
+#btnLista > img { width: 30px; height: 30px; }

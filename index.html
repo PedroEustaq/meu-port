@@ -12,11 +12,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Preload da imagem LCP (hero) para descoberta antecipada -->
-    <link rel="preload" as="image" href="img/Foto.jpeg" >
+    <link rel="preload" as="image" href="img/Foto.jpeg">
 
-    <!-- CSS crítico: carrega primeiro -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style2.css">
+    <!-- Preload do CSS crítico (prioridade alta para LCP) -->
+    <link rel="preload" href="css/critical.css" as="style">
+
+    <!-- CSS crítico: above-the-fold para LCP (bloqueante, mínimo) -->
+    <link rel="stylesheet" href="css/critical.css">
+
+    <!-- CSS secundário: carregado após o first paint (não bloqueia LCP) -->
+    <link rel="stylesheet" href="css/style-layout.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/style-components.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/style-theme.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="style2.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="css/style-layout.css">
+        <link rel="stylesheet" href="css/style-components.css">
+        <link rel="stylesheet" href="css/style-theme.css">
+        <link rel="stylesheet" href="style2.css">
+    </noscript>
 
     <!-- Fontes sem bloquear renderização -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Anton+SC&family=Bebas+Neue&family=Inter:opsz@14..32&family=Karla&family=Roboto:ital,wght@0,100..900;1,100..900&family=VT323&family=Poppins:wght@300;400;600&display=swap" media="print" onload="this.media='all'">
@@ -162,7 +176,7 @@
 
         <div id="projetosD" class="Shidden">
 
-            <img src="img/nextImg.webp" alt="" class="nextI" width="1200" >
+            <img src="img/nextImg.webp" alt="" class="nextI" width="1200" height="auto" >
 
             <section id="site-projeto">
                 <section class="tit">
