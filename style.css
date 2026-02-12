@@ -12,8 +12,6 @@ body {
     background-color: #1C1C1C;
     width: 100vw;
     overflow-x: hidden;
-    /* background: -webkit-linear-gradient(90deg, #141414,#0e4200);/* Chrome 10-25, Safari 5.1-6 */
-    /* background: linear-gradient(90deg, #141414,#0e4200);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 h1#hLan {
@@ -102,41 +100,6 @@ p#pSou {
         opacity: 1;
     }
 }
-
-div.typing-demo {
-    width: 100vw;
-    height: 300px;
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-    white-space: wrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-size: 2em;
-}
-
-@keyframes typing {
-    from {
-        width: 0
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent
-    }
-}
-
-
-
-img.cert {
-    position: absolute;
-    margin-top: -750px;
-    width: 700px;
-    opacity: 0.3;
-    z-index: 0;
-    transform: rotateZ(5deg);
-    margin-right: 750px;
-}
-
 section#imgMar>img {
     overflow: hidden;
     border-radius: 1000px;
@@ -757,16 +720,6 @@ div#PainelDesce>div {
     transition: all 0.5s;
 }
 
-section#mais {
-    background-color: #0a0a0a;
-}
-
-div#wavID {
-    height: 600px;
-    overflow: hidden;
-    background-color: rgb(255, 255, 255);
-}
-
 section#site-projeto>div {
     text-align: center;
     padding: 30px;
@@ -1243,50 +1196,6 @@ div#textReal>div#separar {
     }
 
 }
-
-button#chat {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 150px;
-    height: 50px;
-    font-size: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    border-radius: 5px;
-    color: white;
-    background: linear-gradient(to right, #07d578, #05d89c);
-    border: #ffffff6a 0.2px solid;
-
-    animation-name: a;
-    animation-duration: 2s;
-    animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
-}
-
-button#chat:hover {
-    cursor: pointer;
-}
-
-button#chat>img {
-    width: 30px;
-    filter: invert(100%);
-}
-
-img.avMin {
-    position: absolute;
-    width: 650px;
-    opacity: 0.5;
-    right: 0;
-    margin-right: 75px;
-    margin-top: -105px;
-    z-index: -1;
-
-}
-
 div#separar {
     display: flex;
     flex-flow: row nowrap;
@@ -1361,134 +1270,12 @@ div#analizar:hover {
     cursor: pointer;
     text-decoration: skyblue;
 }
-
-div.Cimagem>img#m1 {
-    position: absolute;
-    width: 405px;
-    height: 290px;
-    transform: rotateZ(-10deg);
-    margin-left: -250px;
-
-    animation-name: oiaeuAqESQUERDA;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-play-state: running;
-    animation-delay: 1s;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
-
-div.Cimagem>img#m2 {
-    position: absolute;
-    width: 405px;
-    height: 290px;
-    margin-top: -60px;
-    margin-left: -150px;
-    transform: rotateZ(-5deg);
-    z-index: 1;
-    animation-name: oiaeuAqCIMA;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-play-state: running;
-    animation-delay: 1.5s;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
-
-div.Cimagem>img#m3 {
-    position: absolute;
-    width: 405px;
-    height: 290px;
-    margin-top: -20px;
-    margin-left: -40px;
-    z-index: 0;
-    transform: rotateZ(10deg);
-    animation-name: oiaeuAq;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-play-state: running;
-    animation-delay: 2s;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
-
-div.Cimagem>img#m4 {
-    display: none;
-}
-
-div#areaDosCertificados {
-    margin-top: 150px;
-    display: flex;
-    align-content: space-between;
-    justify-content: center;
-    flex-flow: row wrap;
-    width: 800px;
-    height: 200px;
-    background-color: transparent;
-}
-
-@keyframes oiaeuAq {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-        margin-top: -20px;
-        margin-left: 100px;
-    }
-
-    100% {
-        margin-top: 0px;
-        margin-left: 0px;
-        opacity: 1;
-    }
-}
-
-@keyframes oiaeuAqCIMA {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-        margin-top: -100px;
-        margin-left: -150px;
-    }
-
-    100% {
-        margin-top: -60px;
-        margin-left: -150px;
-        opacity: 1;
-    }
-}
-
-@keyframes oiaeuAqESQUERDA {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-        margin-top: -20px;
-        margin-left: -350px;
-    }
-
-    100% {
-        margin-top: 0px;
-        margin-left: -250px;
-        opacity: 1;
-    }
-}
-
 div.final {
     border-radius: 3px;
     margin-top: 2px;
     width: 100%;
     max-width: 1520px;
     background: #0e0e0e;
-    /* Chrome 10-25, Safari 5.1-6 */
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fdf6df;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
