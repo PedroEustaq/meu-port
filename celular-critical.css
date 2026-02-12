@@ -1,0 +1,126 @@
+/* ===== CSS CRÍTICO MOBILE - Above-the-fold =====
+   Estilos essenciais para renderização imediata do hero e navbar */
+
+@media (max-width: 768px) {
+    /* Body e main básicos */
+    body {
+        overflow-y: auto;
+    }
+    
+    main {
+        width: 100vw;
+    }
+
+    /* Navbar - visível imediatamente */
+    body.light-mode .navbar {
+        background-color: #4fff5e;
+    }
+    
+    div.navbar {
+        display: flex;
+    }
+    
+    div.navbar #logo {
+        font-size: 20px;
+    }
+
+    div#btnLista input {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        transform: translateX(-32px);
+    }
+
+    .navbar>div#separar {
+        height: 80px;
+        display: none;
+    }
+
+    /* Hero Section - LCP principal */
+    div#contain {
+        flex-flow: column-reverse;
+        align-items: start;
+        justify-content: start;
+        margin-top: 0px;
+        height: 750px;
+        animation-name: none;
+    }
+
+    div#informac {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 90%;
+        border-radius: 20px;
+        padding: 50px;
+        padding-bottom: 20px;
+        animation-name: none;
+        padding-top: 20px;
+        margin-top: 10px;
+        padding-right: 0px;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        justify-self: center;
+        align-self: center;
+        background-color: rgba(0, 0, 0, 0.221);
+        border: 0.1px solid rgba(255, 255, 255, 0.074);
+        line-height: 2.5em;
+    }
+
+    body.light-mode #informac {
+        background-color: #4fff5e;
+    }
+
+    section#quemsouEu>h1 {
+        font-size: 36px;
+        animation: none !important;
+        transition: none !important;
+    }
+
+    section#quemsouEu>h2 {
+        font-size: 30px;
+        color: white;
+        opacity: 1;
+        animation: none !important;
+        transition: none !important;
+    }
+
+    section#imgMar>img {
+        width: 300px;
+        border-radius: 0px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    section#imgMar {
+        background-color: transparent;
+        width: 300px;
+    }
+
+    section#conjunto {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    /* Elementos visíveis no hero */
+    .Shidden {
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+    div#qualida {
+        opacity: 1;
+        animation: none !important;
+        transition: none !important;
+    }
+
+    div#qualida>button {
+        opacity: 1;
+        animation: none !important;
+        transition: none !important;
+    }
+
+    section#botoesRedes {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+}
