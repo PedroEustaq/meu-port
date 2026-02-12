@@ -52,7 +52,9 @@ main {
     padding-bottom: 0px;
     padding-top: 0px;
 }
-
+#hLanWebRTC {
+    color: #05d89c;
+}
 #logo {
     color: #4fff5e;
     text-shadow: 0px 0px 5px #05d89c;
