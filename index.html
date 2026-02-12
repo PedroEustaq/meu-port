@@ -55,6 +55,7 @@
         
         <div id="btnLista">
             <img src="img/iconBranco.png" alt="">
+            <label for="checkbox">Abrir Lista</label>
         <input type="checkbox" id="menu-toggle">
     </div>
     </div>
@@ -282,11 +283,20 @@
         
         <form class="formis">
             <div class="input-row">
-                <input type="text" placeholder="Nome" class="form-input" required>
-                <input type="email" placeholder="Email" class="form-input" required>
+                <div class="form-field">
+                    <label for="contato-nome">Nome</label>
+                    <input id="contato-nome" type="text" placeholder="Nome" class="form-input" required>
+                </div>
+                <div class="form-field">
+                    <label for="contato-email">Email</label>
+                    <input id="contato-email" type="email" placeholder="Email" class="form-input" required>
+                </div>
             </div>
             
-            <textarea placeholder="Digite nesse campo" class="form-textarea" rows="6" required></textarea>
+            <div class="form-field textarea-field">
+                <label for="contato-mensagem">Mensagem</label>
+                <textarea id="contato-mensagem" placeholder="Digite nesse campo" class="form-textarea" rows="6" required></textarea>
+            </div>
             
             <button type="submit" class="submit-btn">Enviar</button>
         </form>
